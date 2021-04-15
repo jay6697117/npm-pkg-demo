@@ -1,0 +1,39 @@
+{
+  "name": "npm-pkg-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "demo": "babel-node demo.js",
+    "es5": "babel demo.js --out-dir es5",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "rm -rf dist && cross-env NODE_ENV=production webpack",
+    "fix": "./node_modules/.bin/eslint --fix --ext .js,.jsx,.vue ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "lodash": "^4.17.21",
+    "numeral": "^2.0.6",
+    "qs": "^6.10.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-vue": "^7.9.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
