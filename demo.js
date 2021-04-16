@@ -25,7 +25,75 @@
 // console.log('res :>> ', res); // res :>>  10,000.2
 
 // 4.0 dayjs
-import dayjs from 'dayjs';
-console.log('dayjs :>> ', dayjs);
-const res = dayjs().format('YYYY/MM/DD HH:mm:ss');
-console.log('res :>> ', res);
+// import dayjs from 'dayjs';
+// console.log('dayjs :>> ', dayjs);
+// const res = dayjs().format('YYYY/MM/DD HH:mm:ss');
+// console.log('res :>> ', res);
+
+// 5.0 uuid
+// import { v4 as uuidv4 } from 'uuid';
+// console.log('uuidv4 :>> ', uuidv4);
+// const res = uuidv4();
+// console.log('res :>> ', res);
+
+// 6.0 faker.js
+// import faker from 'faker';
+// const Faker = faker.constructor;
+// console.log('faker :>> ', faker); // 实例对象
+// console.log('Faker :>> ', Faker); // 构造器constructor
+// console.log('Faker.prototype :>> ', Faker.prototype); // 原形对象
+
+// function generateCustomers () {
+//   const customers = [];
+
+//   for (let id = 0; id < 50; id++) {
+//     const firstName = faker.name.firstName();
+//     const lastName = faker.name.firstName();
+//     const phoneNumber = faker.phone.phoneNumberFormat();
+//     const zipCode = faker.address.zipCode();
+//     const date = faker.date.recent();
+
+//     customers.push({
+//       id,
+//       firstName,
+//       lastName,
+//       phoneNumber,
+//       zipCode,
+//       date
+//     });
+//   }
+
+//   return { customers };
+// }
+
+// const data = generateCustomers();
+// console.log('data :>> ', data);
+
+// 7.0 mockjs
+import Mock from 'mockjs';
+console.log('Mock :>> ', Mock);
+const { Random } = Mock;
+console.log('Random :>> ', Random);
+
+function generateCustomers () {
+  const customers = [];
+
+  for (let id = 0; id < 50; id++) {
+    const firstName = Random.first();
+    const lastName = Random.last();
+    const province = Random.province();
+    const date = Random.date();
+
+    customers.push({
+      id,
+      firstName,
+      lastName,
+      province,
+      date
+    });
+  }
+
+  return { customers };
+}
+const data = generateCustomers();
+console.log('data :>> ', data);

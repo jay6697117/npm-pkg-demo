@@ -16,9 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "dayjs": "^1.10.4",
+    "faker": "^5.5.3",
     "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
     "numeral": "^2.0.6",
-    "qs": "^6.10.1"
+    "qs": "^6.10.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
