@@ -21,7 +21,9 @@ const webpackConfig = {
   plugins: [
     new HtmlWebpackPlugin({
       // 用哪个html作为模板在public目录下创建一个index.html页面当做模板来用
-      template: './index.html',
+      filename: 'index.html',
+      template: './public/index.html',
+      favicon: './public/favicon.ico', // 添加小图标
       hash: true
     })
   ], // 对应的插件
