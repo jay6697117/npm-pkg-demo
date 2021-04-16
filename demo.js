@@ -97,3 +97,18 @@ function generateCustomers () {
 }
 const data = generateCustomers();
 console.log('data :>> ', data);
+
+data.customers.forEach(element => {
+  console.log('element :>> ', element);
+  const h3 = document.createElement('h3');
+  h3.innerHTML = element.province;
+  for (const key in element) {
+    if (Object.hasOwnProperty.call(element, key)) {
+      const item = element[key];
+      const span = document.createElement('span');
+      span.innerHTML = `${key}: ${item}; `;
+      h3.appendChild(span);
+    }
+  }
+  document.getElementById('app').appendChild(h3);
+});
