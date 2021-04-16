@@ -28,4 +28,4 @@
 import dayjs from 'dayjs'
 console.log('dayjs :>> ', dayjs)
 const res = dayjs().format('YYYY/MM/DD HH:mm:ss')
-console.log('res :>> ', res);
+console.log('res :>> ', res)
