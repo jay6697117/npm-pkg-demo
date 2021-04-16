@@ -70,45 +70,50 @@
 // console.log('data :>> ', data);
 
 // 7.0 mockjs
-import Mock from 'mockjs';
-console.log('Mock :>> ', Mock);
-const { Random } = Mock;
-console.log('Random :>> ', Random);
+// import Mock from 'mockjs';
+// console.log('Mock :>> ', Mock);
+// const { Random } = Mock;
+// console.log('Random :>> ', Random);
 
-function generateCustomers () {
-  const customers = [];
+// function generateCustomers () {
+//   const customers = [];
 
-  for (let id = 0; id < 50; id++) {
-    const firstName = Random.first();
-    const lastName = Random.last();
-    const province = Random.province();
-    const date = Random.date();
+//   for (let id = 0; id < 50; id++) {
+//     const firstName = Random.first();
+//     const lastName = Random.last();
+//     const province = Random.province();
+//     const date = Random.date();
 
-    customers.push({
-      id,
-      firstName,
-      lastName,
-      province,
-      date
-    });
-  }
+//     customers.push({
+//       id,
+//       firstName,
+//       lastName,
+//       province,
+//       date
+//     });
+//   }
 
-  return { customers };
+//   return { customers };
+// }
+// const data = generateCustomers();
+// console.log('data :>> ', data);
+
+// data.customers.forEach(element => {
+//   console.log('element :>> ', element);
+//   const h3 = document.createElement('h3');
+//   h3.innerHTML = element.province;
+//   for (const key in element) {
+//     if (Object.hasOwnProperty.call(element, key)) {
+//       const item = element[key];
+//       const span = document.createElement('span');
+//       span.innerHTML = `${key}: ${item}; `;
+//       h3.appendChild(span);
+//     }
+//   }
+//   document.getElementById('app').appendChild(h3);
+// });
+
+// 7.0 sum.js
+export default function sum (x, y) {
+  return x + y;
 }
-const data = generateCustomers();
-console.log('data :>> ', data);
-
-data.customers.forEach(element => {
-  console.log('element :>> ', element);
-  const h3 = document.createElement('h3');
-  h3.innerHTML = element.province;
-  for (const key in element) {
-    if (Object.hasOwnProperty.call(element, key)) {
-      const item = element[key];
-      const span = document.createElement('span');
-      span.innerHTML = `${key}: ${item}; `;
-      h3.appendChild(span);
-    }
-  }
-  document.getElementById('app').appendChild(h3);
-});
