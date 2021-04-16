@@ -48,7 +48,7 @@
   },
   "lint-staged": {
     "./**/*.{js,jsx,vue}": [
-      "./node_modules/.bin/eslint --fix --ext .js,.jsx,.vue ./",
+      "eslint --fix",
       "git add"
     ]
   }
