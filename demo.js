@@ -26,12 +26,7 @@
 
 // 4.0 dayjs
 import dayjs from 'dayjs'
-
-
 console.log('dayjs :>> ', dayjs)
-
-
-
 const res = dayjs().format('YYYY/MM/DD HH:mm:ss')
 
 
