@@ -41,15 +41,15 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2"
   },
-  "lint-staged": {
-    "./**/*.{js,jsx,vue}": [
-      "npm run eslint && npm run stylelint",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "./node_modules/.bin/eslint --fix --ext .js,.jsx,.vue ./"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,vue}": [
+      "./node_modules/.bin/eslint --fix --ext .js,.jsx,.vue ./",
+      "git add"
+    ]
   }
 }

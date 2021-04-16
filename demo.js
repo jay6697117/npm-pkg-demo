@@ -25,9 +25,8 @@
 // console.log('res :>> ', res); // res :>>  10,000.2
 
 // 4.0 dayjs
-import dayjs from 'dayjs'
-console.log('dayjs :>> ', dayjs)
-const res = dayjs().format('YYYY/MM/DD HH:mm:ss')
+import dayjs from 'dayjs';
+console.log('dayjs :>> ', dayjs);
+const res = dayjs().format('YYYY/MM/DD HH:mm:ss');
 
-
-console.log('res :>> ', res)
+console.log('res :>> ', res);
