@@ -33,10 +33,16 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-vue": "^7.9.0",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^6.0.0",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^21.0.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run fix && npm run stylelint"
+    }
   }
 }
