@@ -1,0 +1,43 @@
+{
+  "_from": "@zkty-team/x-engine-core",
+  "_id": "@zkty-team/x-engine-core@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-LaJPl+VWIgjPJKO9gyNV0qQZTh0=",
+  "_location": "/@zkty-team/x-engine-core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@zkty-team/x-engine-core",
+    "name": "@zkty-team/x-engine-core",
+    "escapedName": "@zkty-team%2fx-engine-core",
+    "scope": "@zkty-team",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.nlark.com/@zkty-team/x-engine-core/download/@zkty-team/x-engine-core-1.0.0.tgz",
+  "_shasum": "2da24f97e5562208cf24a3bd832355d2a4194e1d",
+  "_spec": "@zkty-team/x-engine-core",
+  "_where": "/Users/yuantingting/Desktop/eee",
+  "author": {
+    "name": "Cwz."
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "连接原生native和js之间的重要模块",
+  "keywords": [
+    "x-engine-core"
+  ],
+  "license": "ISC",
+  "main": "src/index.js",
+  "name": "@zkty-team/x-engine-core",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

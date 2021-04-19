@@ -11,7 +11,8 @@
     "eslint": "./node_modules/.bin/eslint --fix --ext .js,.jsx,.vue ./",
     "stylelint": "./node_modules/.bin/stylelint './css/**/*.css' --fix",
     "test": "jest",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "build:es5":"babel ./x-engine-core/src/*.js --out-dir ./x-engine-core/src"
   },
   "keywords": [],
   "author": "",
